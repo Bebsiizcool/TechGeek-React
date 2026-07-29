@@ -29,21 +29,18 @@ const Sign = () => {
 
         <form className='flex ml-15 mt-10 flex-col w-[80%]  ' onSubmit={handleSubmit(onSubmit)}>
 
-          <p className=' mb-2 ml-5'>Full Name:</p>
+          <p className=' mb-2 ml-5'>Username:</p>
           <input
             className=' rounded-4xl border border-amber-50 p-5'
             placeholder='UserName'
-            {...register("Full_Name", {
-              required: '*Email is missing',
-              pattern: {
-                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                message: "Please enter a valid email address",
-              }
+            {...register("Username", {
+              required: '*Username is missing',              
+                // message: "Please enter a valid email address",
             })} />
           
-          {errors.Full_Name && (
+          {errors.Username && (
             <span className="text-red-400 text-sm">
-              {errors.Email.message}
+              {errors.Username.message}
             </span>
           )}
 
@@ -95,8 +92,9 @@ const Sign = () => {
           )}
           </div>
 
-
-          <span className='flex justify-end mt-1 underline hover:cursor-pointer'>ForgotPassword?</span>
+          <Link to="/login">
+          <span className='flex justify-end mt-1 underline hover:cursor-pointer'>Already have an account?</span>
+            </Link>
 
           <button
             type="submit"
