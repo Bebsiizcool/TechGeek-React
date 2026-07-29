@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className=' w-[95%] m-auto pt-5 '>
+    <div className=' w-[95%] m-auto pt-8 '>
       <nav className='bg-gray-800 flex text-white rounded-full '>
 
         <Link
