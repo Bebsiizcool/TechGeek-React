@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { GiAbstract042 } from "react-icons/gi";
 
 const Home = () => {
   return (
-    <div className='flex justify-between'>
+  <div>
+    <div className='flex justify-between  bg-gradient-to-br from-gray-900 via-slate-900 to-black'>
     <div className='w-1/2 pl-40 mt-48'>
 
       <h1 className='text-7xl font-bold'>INTRODUCING</h1>
@@ -29,9 +31,31 @@ const Home = () => {
    
 
       <div className=' flex '>
-      <img className='  scale-x-[-1] 'src="public\herosimg.png" alt="" srcset="" />
+      <img className='   scale-x-[-1] 'src="\herosimg.png" alt="" srcset="" />
       </div>
 
+
+
+    </div>
+
+
+<div className='min-h-screen bg-gray-800'>
+
+<div className='flex justify-center text-5xl pt-20 font-bold'>
+<h1>Our Features</h1>
+</div>
+
+<div className="flex justify-center mt-20 ">
+
+<div className=' pt-20 flex justify-center mx-10 border border-amber-50 w-[25%] h-170'>
+  <div className=' bg-amber-50 rounded-full w-45 h-45'> <GiAbstract042  className='bg-gray-800'/></div>
+</div>
+<div className=' mx-10 border border-amber-50 w-[25%] h-170'></div>
+<div className=' mx-10 border border-amber-50 w-[25%] h-170'></div>
+
+</div>
+
+</div>
 
 
     </div>
