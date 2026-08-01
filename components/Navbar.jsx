@@ -3,9 +3,15 @@ import { SiTechcrunch } from "react-icons/si";
 import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
+   const scrolltofeature = () =>{
+    document.getElementById('features').scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+
   return (
     <div className=' w-[95%] m-auto pt-8 '>
-      <nav className='bg-gray-800 flex text-white rounded-full '>
+      <nav className='bg-gray-800 flex text-white rounded-full  '>
 
         <Link
           to="/"
@@ -17,14 +23,14 @@ const Navbar = () => {
         </Link>
 
         <ul className='flex gap-13 p-8 hover:cursor-pointer'>
-          <NavLink> <li>Features</li> </NavLink>
+          <NavLink onClick={scrolltofeature}> <li>Features</li> </NavLink>
           <NavLink> <li>Production</li> </NavLink>
           <NavLink> <li>Services</li> </NavLink>
           <NavLink> <li>Contact</li> </NavLink>
           <NavLink> <li>AboutUS</li> </NavLink>
         </ul>
 
-        <div className='flex ml-165 gap-3 text-lg items-center text-gray-800 '>
+        <div className='flex ml-160 gap-3 text-lg items-center text-gray-800 '>
 
           <Link to='/login'>
           <button className='bg-white rounded-full w-30 h-10 hover:cursor-pointer'>Login</button>
