@@ -44,10 +44,22 @@ const Home = () => {
 
 
 
-<div id="services" className="h-screen bg-gray-800 overflow-hidden">
+<div id="services" className=" flex justify-between h-screen bg-gray-800 overflow-hidden">
  
 <div className='mt-15'>
   <img className='h-dvh'src="/ser33.png " alt="" />
+</div>
+
+<div id='left' className='' >
+<h1 className='flex mr-110 text-5xl font-bold pt-40'>Our Services</h1>
+
+<div className='flex flex-row flex-wrap ap-4'>
+  <div className="border border-amber-50 w-md h-40"></div>
+  <div className="border border-amber-50 w-md h-40"></div>
+  <div className="border border-amber-50 w-md h-40"></div>
+  <div className="border border-amber-50 w-md h-40"></div>
+</div>
+
 </div>
 
 
