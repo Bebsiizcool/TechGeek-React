@@ -4,8 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Navbar from '../components/Navbar'
 import { Route, Routes } from 'react-router-dom'
-import Login from './page/Login'
-import Sign from './page/Sign'
+import Login from '../components/Login'
+import Sign from '../components/Sign'
 import Home from './page/Home'
 import './App.css'
 
@@ -18,6 +18,7 @@ function App() {
       
      <Navbar/>
      <Routes>
+
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/sign' element={<Sign/>}/>
