@@ -17,7 +17,7 @@ const Login = () => {
   const onSubmit = (data) => console.log(data)
 
   return (
-    <div className='flex justify-center mt-25'>
+    <div className='flex justify-center my-25'>
 
 
       <div className='bg-gray-800 w-150 h-150 rounded-4xl  '>
