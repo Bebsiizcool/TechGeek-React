@@ -4,6 +4,7 @@ import Services from '../../components/Services';
 import Features from '../../components/Features';
 import Hero from '../../components/Hero';
 
+
 const Home = () => {
  
 
@@ -11,7 +12,7 @@ const Home = () => {
   <div> 
     <Hero/>
     <Services/>
-
+    
 <div id="services" className="h-screen bg-slate-950 overflow-hidden">
  <div className='mt-15'>
  </div>
