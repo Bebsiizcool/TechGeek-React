@@ -8,6 +8,11 @@ const Navbar = () => {
       behavior: "smooth",
     })
   }
+   const scrolltofeatures = () =>{
+    document.getElementById('services').scrollIntoView({
+      behavior: "smooth",
+    })
+  }
 
   return (
     <div className=' w-[95%] m-auto pt-8 '>
@@ -23,9 +28,9 @@ const Navbar = () => {
         </Link>
 
         <ul className='flex gap-13 p-8 hover:cursor-pointer'>
-          <NavLink onClick={scrolltofeature}> <li>Features</li> </NavLink>
+          <NavLink onClick={scrolltofeatures}> <li>Services</li> </NavLink>
           <NavLink> <li>Production</li> </NavLink>
-          <NavLink> <li>Services</li> </NavLink>
+          <NavLink onClick={scrolltofeature}> <li>Features</li> </NavLink>
           <NavLink> <li>Contact</li> </NavLink>
           <NavLink> <li>AboutUS</li> </NavLink>
         </ul>
