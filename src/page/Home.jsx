@@ -3,6 +3,7 @@ import { TbBrandReact } from "react-icons/tb";
 import Services from '../../components/Services';
 import Features from '../../components/Features';
 import Hero from '../../components/Hero';
+import Testamonials from '../../components/testamonials';
 
 
 const Home = () => {
@@ -12,14 +13,10 @@ const Home = () => {
   <div> 
     <Hero/>
     <Services/>
+    <Testamonials/>
+    <Features/>
+
     
-<div id="services" className="h-screen bg-slate-950 overflow-hidden">
- <div className='mt-15'>
- </div>
-</div>
-
-<Features/>
-
     </div>
   )
 }

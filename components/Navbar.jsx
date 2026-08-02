@@ -8,8 +8,14 @@ const Navbar = () => {
       behavior: "smooth",
     })
   }
-   const scrolltofeatures = () =>{
+   const scrolltoservices = () =>{
     document.getElementById('services').scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+
+   const scrolltocontact = () =>{
+    document.getElementById('footer').scrollIntoView({
       behavior: "smooth",
     })
   }
@@ -28,10 +34,10 @@ const Navbar = () => {
         </Link>
 
         <ul className='flex gap-13 p-8 hover:cursor-pointer'>
-          <NavLink onClick={scrolltofeatures}> <li>Services</li> </NavLink>
-          <NavLink> <li>Production</li> </NavLink>
+          <NavLink onClick={scrolltoservices}> <li>Services</li> </NavLink>
+          <NavLink> <li>Testamonials</li> </NavLink>
           <NavLink onClick={scrolltofeature}> <li>Features</li> </NavLink>
-          <NavLink> <li>Contact</li> </NavLink>
+          <NavLink onClick={scrolltocontact}> <li>Contact</li> </NavLink>
           <NavLink> <li>AboutUS</li> </NavLink>
         </ul>
 
