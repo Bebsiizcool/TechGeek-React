@@ -20,6 +20,12 @@ const Navbar = () => {
     })
   }
 
+   const scrolltotestimonial = () =>{
+    document.getElementById('testimonial').scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+
   return (
     <div className=' w-[95%] m-auto pt-8 '>
       <nav className='bg-gray-800 flex text-white rounded-full  '>
@@ -35,7 +41,7 @@ const Navbar = () => {
 
         <ul className='flex gap-13 p-8 hover:cursor-pointer'>
           <NavLink onClick={scrolltoservices}> <li>Services</li> </NavLink>
-          <NavLink> <li>Testamonials</li> </NavLink>
+          <NavLink> <li onClick={scrolltotestimonial}>Testamonials</li> </NavLink>
           <NavLink onClick={scrolltofeature}> <li>Features</li> </NavLink>
           <NavLink onClick={scrolltocontact}> <li>Contact</li> </NavLink>
           <NavLink> <li>AboutUS</li> </NavLink>
