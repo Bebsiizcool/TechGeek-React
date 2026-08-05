@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <div>
-       <div className='flex justify-between  bg-gradient-to-br from-gray-900 via-slate-900 to-black'>
-    <div className='w-1/2 pl-40 mt-48'>
+       <div className='flex justify-between h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black'>
+    <div className='w-1/2 pl-40  flex justify-center flex-col'>
 
       <h1 className='text-7xl font-bold'>INTRODUCING</h1>
       <h1 className='text-6xl font-medium -mt-2 text-blue-200 italic '>NEW TECHNOLOGY</h1>
@@ -28,7 +28,7 @@ const Hero = () => {
 
    
 
-      <div className=' flex '>
+      <div className=' flex pt-20'>
       <img className='   scale-x-[-1] 'src="\herosimg.png" alt="" srcset="" />
       </div>
 

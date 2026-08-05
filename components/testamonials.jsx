@@ -1,43 +1,118 @@
-import React from 'react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { motion } from "framer-motion";
+import TestimonialCard from "./Testimonialcard";
+const testimonials = [
+  {
+    id: 1,
+    name: "Gabrielle Williams",
+    role: "CEO",
+    image: "https://i.pravatar.cc/150?img=32",
+    text: "Creative geniuses who listen, understand and craft captivating visuals."
+  },
+  {
+    id: 2,
+    name: "Samantha Johnson",
+    role: "Founder",
+    image: "https://i.pravatar.cc/150?img=47",
+    text: "Exceeded our expectations with innovative designs that truly brought our vision alive."
+  },
+  {
+    id: 3,
+    name: "Natalie Martinez",
+    role: "Marketing Head",
+    image: "https://i.pravatar.cc/150?img=12",
+    text: "From concept to execution, their creativity knows no bounds."
+  },
+  {
+    id: 4,
+    name: "Victoria Thompson",
+    role: "CEO",
+    image: "https://i.pravatar.cc/150?img=20",
+    text: "Highly recommended for any project. Their work is refreshing and imaginative."
+  },
+  {
+    id: 5,
+    name: "John Peter",
+    role: "Creative Director",
+    image: "https://i.pravatar.cc/150?img=68",
+    text: "Their artistic flair transformed our campaigns into something remarkable."
+  },
+  {
+    id: 6,
+    name: "Jacob Smith",
+    role: "Designer",
+    image: "https://i.pravatar.cc/150?img=56",
+    text: "Working with them has been one of the best experiences."
+  }
+];
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+const top = [...testimonials, ...testimonials];
+const bottom = [...testimonials].reverse();
+const bottomRow = [...bottom, ...bottom];
 
-const testamonials = () => {
+export default function Testimonials() {
   return (
-    <div>
+    <section id="testimonial" className="py-24 bg-slate-950 h-screen overflow-hidden">
 
-      <div id="testimonial" className="  h-screen max-w-7xl mx-auto py-20">
-      <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-6xl ">What Others Say About Us</h1>
-        <p className="text-xl p-5">Our team created best opportunities for your business.</p>
-        </div>
+      <div className="text-center mb-14">
+
+        <span className="px-5 py-2 rounded-full bg-black text-white text-sm">
+          ⭐ Rated 5/5 by over 1,400 users
+        </span>
+
+        <h2 className="text-5xl font-bold mt-8">
+          What Others Say About Us
+        </h2>
+
+        <p className="text-2xl pt-2">
+          Our team created best opportunities for your business.
+        </p>
+
       </div>
 
-      <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
-    </Swiper>
+      {/* TOP */}
 
-    </div>
-  )
+      <motion.div
+        className="flex gap-6 mb-8 w-max"
+        animate={{
+          x: ["0%", "-50%"],
+        }}
+        transition={{
+          duration: 28,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+        whileHover={{}}
+      >
+        {top.map((item, index) => (
+          <TestimonialCard
+            key={index}
+            item={item}
+          />
+        ))}
+      </motion.div>
+
+      {/* BOTTOM */}
+
+      <motion.div
+        className="flex gap-6 w-max"
+        animate={{
+          x: ["-50%", "0%"],
+        }}
+        transition={{
+          duration: 28,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+  
+      >
+        {bottomRow.map((item, index) => (
+          <TestimonialCard
+            key={index}
+            item={item}
+          />
+        ))}
+      </motion.div>
+
+    </section>
+  );
 }
-
-export default testamonials

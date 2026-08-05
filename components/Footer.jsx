@@ -6,7 +6,7 @@ import { FiTwitter } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div id='footer'>
+    <div id='footer' className='bg-gray-800 '>
     <div className=' w-full flex'>
       <div className='px-20 pt-10 w-1/3 '>
         <h1 className='flex items-center text-4xl'><SiTechcrunch className='m-2' /> TechGeek</h1>
