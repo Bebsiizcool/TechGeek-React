@@ -6,7 +6,7 @@ import ShootingStarsBackground from './ShootingStarsBackground'
 const Hero = () => {
   return (
     <div>
-       <div className="relative overflow-hidden flex flex-col lg:flex-row justify-between min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black">
+       <div id='hero' className="relative overflow-hidden flex flex-col lg:flex-row justify-between min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black">
         <ShootingStarsBackground transparent />
 
         {/* transparent=true so it layers on top of the gradient above, instead of covering it */}

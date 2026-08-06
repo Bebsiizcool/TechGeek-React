@@ -26,13 +26,26 @@ const Navbar = () => {
     })
   }
 
+   const scrolltoabout = () =>{
+    document.getElementById('about').scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+
+   const scrolltohero = () =>{
+    document.getElementById('hero').scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+
   return (
     <div className="fixed top-3 md:top-7 z-50 w-full flex justify-center px-2 md:px-4">
-      <nav className='w-full max-w-6xl bg-gray-800 flex justify-center text-white rounded-full items-center px-2 md:px-4  flex-wrap border-b-2 border-amber-50 transition-all duration-200 ease-in-out hover:p-2  hover:scale-105 cursor-pointer hover:max-w-7xl hover:text-lg' >
+      <nav className='w-full max-w-6xl bg-gray-800 flex justify-center text-white rounded-full items-center px-2 md:px-4  flex-wrap border-b-2 border-amber-50 transition-all duration-200 ease-in-out hover:p-2  hover:scale-105  hover:max-w-7xl hover:text-lg' >
 
         <Link
-          to="/"
+          to=""
           className="flex items-center text-xl md:text-3xl px-4 md:pr-12 font-medium"
+          onClick={scrolltohero}
         >
           <SiTechcrunch className='m-2' />
 
@@ -43,8 +56,8 @@ const Navbar = () => {
           <NavLink onClick={scrolltoservices}> <li>Services</li> </NavLink>
           <NavLink> <li onClick={scrolltotestimonial}>Testamonials</li> </NavLink>
           <NavLink onClick={scrolltofeature}> <li>Features</li> </NavLink>
+          <NavLink onClick={scrolltoabout}> <li>AboutUS</li> </NavLink>
           <NavLink onClick={scrolltocontact}> <li>Contact</li> </NavLink>
-          <NavLink> <li>AboutUS</li> </NavLink>
         </ul>
 
        <div className="flex gap-2 md:gap-3 px-3 md:px-8 items-center text-gray-800">

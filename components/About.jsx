@@ -4,7 +4,7 @@ import ShootingStarsBackground from './ShootingStarsBackground'
 const About = () => {
   return (
     <div>
-      <div className="h-screen relative overflow-hidden flex items-center justify-center">
+      <div id='about' className="h-screen relative overflow-hidden flex items-center justify-center">
         <ShootingStarsBackground transparent />
           <div className="flex flex-col text-center ">
             <h1 className='font-bold text-7xl w-2xl flex  leading-19 text-center'>We're Changing The Way People Think About Tech</h1>
