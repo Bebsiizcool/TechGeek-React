@@ -1,15 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ShootingStarsBackground from './ShootingStarsBackground'
+
+
 const Hero = () => {
   return (
     <div>
-       <div className='flex justify-between h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black'>
-    <div className='w-1/2 pl-40  flex justify-center flex-col'>
+       <div className="relative overflow-hidden flex flex-col lg:flex-row justify-between min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black">
+        <ShootingStarsBackground transparent />
 
-      <h1 className='text-7xl font-bold'>INTRODUCING</h1>
-      <h1 className='text-6xl font-medium -mt-2 text-blue-200 italic '>NEW TECHNOLOGY</h1>
+        {/* transparent=true so it layers on top of the gradient above, instead of covering it */}
 
-      <p className='max-w-5xl mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla corporis dolores quam voluptates earum voluptatum pariatur perferendis quasi magni, recusandae veritatis deserunt quidem velit esse, consectetur quo! In veniam dignissimos modi possimus tempora dolore iure a assumenda et quibusdam, magnam magni molestiae quam eum cupiditate enim consectetur obcaecati exercitationem doloribus quisquam, voluptate quidem quasi, voluptatem voluptates! Consequuntur aut, a cum provident repudiandae aspernatur officia, ex reiciendis, suscipit similique consequatur delectus natus consectetur. Quasi ratione sit laboriosam eaque neque velit consequuntur corrupti libero. Ab consequatur quas voluptates dolores animi. Dolorum eos dolorem necessitatibus ullam, consequuntur incidunt harum pariatur aperiam facilis consectetur!</p>
+    <div className="relative z-10 w-full lg:w-1/2 px-6 md:px-12 lg:px-20 xl:pl-40 flex justify-center flex-col">
+
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">INTRODUCING</h1>
+      <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold italic text-gray-300  -mt-2">NEW TECHNOLOGY</h1>
+
+      <p className="max-w-2xl mt-5 text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, pariatur magnam. Animi enim possimus autem inventore quasi quia, mollitia obcaecati minima, sed magnam excepturi ipsum pariatur. Architecto numquam nihil enim, aperiam impedit soluta dicta temporibus beatae odio quidem expedita porro labore. Quasi hic odit rem possimus autem ducimus, quo vitae nihil, cumque accusantium voluptate itaque est deleniti id recusandae quidem corporis nemo doloremque quos sit magnam qui praesentium! Voluptas, quibusdam.</p>
 
         <div className='flex mt-5 gap-3 text-lg  text-white-800 '>
 
@@ -28,7 +35,7 @@ const Hero = () => {
 
    
 
-      <div className=' flex pt-20'>
+      <div className='relative z-10 flex pt-20'>
       <img className='   scale-x-[-1] 'src="\herosimg.png" alt="" srcset="" />
       </div>
 

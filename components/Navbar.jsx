@@ -27,19 +27,19 @@ const Navbar = () => {
   }
 
   return (
-    <div className=' w-[100%] mt-12 fixed z-99 flex justify-center h-10 items-center hover:'>
-      <nav className=' bg-gray-800 flex text-white rounded-full  flex-warp border border-amber-50'>
+    <div className="fixed top-3 md:top-7 z-50 w-full flex justify-center px-2 md:px-4">
+      <nav className='w-full max-w-6xl bg-gray-800 flex justify-center text-white rounded-full items-center px-2 md:px-4  flex-wrap border-b-2 border-amber-50 transition-all duration-200 ease-in-out hover:p-2  hover:scale-105 cursor-pointer hover:max-w-7xl hover:text-lg' >
 
         <Link
           to="/"
-          className="flex items-center text-3xl px-12  font-medium hover:cursor-pointer"
+          className="flex items-center text-xl md:text-3xl px-4 md:pr-12 font-medium"
         >
           <SiTechcrunch className='m-2' />
 
           <span className=''> TechGeek</span>
         </Link>
 
-        <ul className='flex gap-13 p-4 hover:cursor-pointer hover:p-8'>
+       <ul className="hidden md:flex gap-8 lg:gap-12 p-4">
           <NavLink onClick={scrolltoservices}> <li>Services</li> </NavLink>
           <NavLink> <li onClick={scrolltotestimonial}>Testamonials</li> </NavLink>
           <NavLink onClick={scrolltofeature}> <li>Features</li> </NavLink>
@@ -47,14 +47,14 @@ const Navbar = () => {
           <NavLink> <li>AboutUS</li> </NavLink>
         </ul>
 
-        <div className='flex  gap-3 px-12 text-lg items-center text-gray-800 '>
+       <div className="flex gap-2 md:gap-3 px-3 md:px-8 items-center text-gray-800">
 
           <Link to='/login'>
-          <button className='bg-white rounded-full w-20 h-10 hover:cursor-pointer'>Login</button>
+          <button className='bg-white rounded-full w-16 md:w-20 h-8 text-sm md:text-base hover:cursor-pointer'>Login</button>
           </Link>
 
           <Link to='/sign'>
-          <button className='bg-white rounded-full w-20 h-10 hover:cursor-pointer'>SignUp</button>
+          <button className='bg-white rounded-full w-16 md:w-20 h-8 text-sm md:text-base hover:cursor-pointer'>SignUp</button>
           </Link>
         </div>
       </nav>

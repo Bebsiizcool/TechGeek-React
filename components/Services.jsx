@@ -5,12 +5,14 @@ import { FaQuidditch } from "react-icons/fa";
 import { IoMdCloudy } from "react-icons/io";
 import { FaBrain } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
+import ShootingStarsBackground from './ShootingStarsBackground';
 
 
 const Services = () => {
   return (
     <div>
-      <div id="services" className=" flex justify-between h-screen  bg-gray-800 overflow-hidden">
+      <div id="services" className=" relative overflow-hidden flex justify-between h-screen  bg-gray-800 overflow-hidden">
+      
  
 <div className='mt-15'>
   <img className='h-dvh'src="/ser33.png" alt="" />

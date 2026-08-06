@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import TestimonialCard from "./Testimonialcard";
+import ShootingStarsBackground from "./ShootingStarsBackground";
 const testimonials = [
   {
     id: 1,
@@ -51,8 +52,8 @@ const bottomRow = [...bottom, ...bottom];
 
 export default function Testimonials() {
   return (
-    <section id="testimonial" className="py-24 bg-slate-950 h-screen overflow-hidden">
-
+    <section id="testimonial" className="relative overflow-hidden py-24 bg-slate-950 h-screen overflow-hidden">
+<ShootingStarsBackground transparent />
       <div className="text-center mb-14">
 
         <span className="px-5 py-2 rounded-full bg-black text-white text-sm">

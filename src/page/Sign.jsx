@@ -17,7 +17,7 @@ const Sign = () => {
   const onSubmit = (data) => console.log(data)
 
   return (
-    <div className='flex justify-center my-25'>
+    <div className='flex justify-center items-center h-screen'>
 
 
       <div className='bg-gray-800 w-150 h-170 rounded-4xl  '>
