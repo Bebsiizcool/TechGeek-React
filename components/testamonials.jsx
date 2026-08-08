@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import TestimonialCard from "./Testimonialcard";
-import ShootingStarsBackground from "./ShootingStarsBackground";
+import ShootingStarsBackground from "./shootingstars/ShootingStarsBackground";
 const testimonials = [
   {
     id: 1,
@@ -71,7 +71,7 @@ export default function Testimonials() {
       </div>
 
       {/* TOP */}
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" >
       <motion.div
         className="flex gap-6 mb-8 w-max"
         animate={{

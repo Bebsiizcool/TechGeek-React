@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ShootingStarsBackground from './ShootingStarsBackground'
+import ShootingStarsBackground from './shootingstars/ShootingStarsBackground'
 
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
 
     <div data-aos="fade-up" className="relative z-10 w-full lg:w-1/2 px-6 md:px-12 lg:px-20 xl:pl-40 flex justify-center flex-col">
 
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">INTRODUCING</h1>
+      <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">INTRODUCING</h1>
       <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold italic text-gray-300  -mt-2">NEW TECHNOLOGY</h1>
 
       <p className="max-w-2xl mt-5 text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, pariatur magnam. Animi enim possimus autem inventore quasi quia, mollitia obcaecati minima, sed magnam excepturi ipsum pariatur. Architecto numquam nihil enim, aperiam impedit soluta dicta temporibus beatae odio quidem expedita porro labore. Quasi hic odit rem possimus autem ducimus, quo vitae nihil, cumque accusantium voluptate itaque est deleniti id recusandae quidem corporis nemo doloremque quos sit magnam qui praesentium! Voluptas, quibusdam.</p>
@@ -38,7 +38,7 @@ const Hero = () => {
       <div data-aos="fade-up"  className='relative z-10 flex pt-20'>
       <img className=' scale-x-[-1]  transition-all duration-300 ease-out
          
-         hover:drop-shadow-[0_0_25px_rgba(0,126,191, 0.81)]
+         hover:drop-shadow-[0_0_25px_rgba(0,126,191,0.81)]
           'src="\herosimg.png" alt="" srcset="" />
       </div>
 

@@ -5,7 +5,7 @@ import { FaQuidditch } from "react-icons/fa";
 import { IoMdCloudy } from "react-icons/io";
 import { FaBrain } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
-import ShootingStarsBackground from './ShootingStarsBackground';
+import ShootingStarsBackground from './shootingstars/ShootingStarsBackground';
 
 
 const Services = () => {

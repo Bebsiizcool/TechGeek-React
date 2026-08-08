@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-3 md:top-7 z-50 w-full flex justify-center px-2 md:px-4">
-      <nav className='w-full max-w-6xl bg-gray-800 flex justify-center text-white rounded-full items-center px-2 md:px-4  flex-wrap border-b-2 border-amber-50 transition-all duration-200 ease-in-out hover:p-2  hover:scale-105  hover:max-w-7xl hover:text-lg' >
+      <nav className='w-full max-w-6xl bg-gray-800 flex justify-center text-white rounded-full items-center px-2 md:px-4  flex-wrap border-b-2 border-amber-50 transition-all duration-200 ease-in-out hover:p-2  hover:scale-105  ' >
 
         <Link
           to=""
