@@ -1,6 +1,6 @@
-# TechGeek 🚀
+# TechGeek 
 
-A modern, animated portfolio/landing page built with **React + Vite**, styled with **Tailwind CSS**, and enhanced with scroll animations, custom canvas effects, and interactive UI sections.
+A modern, animated landing page built with **React + Vite**, styled with **Tailwind CSS**, and enhanced with scroll animations, custom canvas effects, and interactive UI sections.
 
 🔗 **Live Demo:** [tech-geek-react.vercel.app](https://tech-geek-react.vercel.app)
 
@@ -12,9 +12,9 @@ This project is part of my journey learning **React** and modern frontend develo
 
 I'm currently pursuing full stack (MERN) development, and this repo will evolve from a static frontend into a full stack application as I learn backend concepts. Planned upgrades include a **Node.js + Express** backend and **MongoDB** for dynamic data.
 
-## ✨ Features
+##  Features
 
-- Responsive, mobile-first UI built with Tailwind CSS
+- Not fully Responsive, UI built with Tailwind CSS
 - Canvas-based animated hero background (shooting stars effect)
 - Scroll-triggered animations using AOS (Animate On Scroll)
 - Reusable, componentized sections (Hero, Services, etc.)
