@@ -11,48 +11,49 @@ const servicesData = [
     icon: TbBrandReact,
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tenetur praesentium reiciendis voluptas officia voluptatem, eos quidem eligendi nihil fugiat dolores, dolor ipsum fugit laborum!",
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est dolor officiis laudantium suscipit molestias ullam. Laudantium quisquam officiis rerum! Aut adipisci dolorum, voluptates nemo illum, laudantium nobis aliquid facilis eveniet quasi quisquam nostrum. Iure numquam distinctio possimus commodi minus.",
   },
   {
     id: 2,
     icon: TbDeviceMobileCancel,
     title: "Mobile App Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tenetur praesentium reiciendis voluptas officia voluptatem, eos quidem eligendi nihil fugiat dolores, dolor ipsum fugit laborum!",
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est dolor officiis laudantium suscipit molestias ullam. Laudantium quisquam officiis rerum! Aut adipisci dolorum, voluptates nemo illum, laudantium nobis aliquid facilis eveniet quasi quisquam nostrum. Iure numquam distinctio possimus commodi minus.",
   },
   {
     id: 3,
     icon: FaQuidditch,
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tenetur praesentium reiciendis voluptas officia voluptatem, eos quidem eligendi nihil fugiat dolores, dolor ipsum fugit laborum!",
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est dolor officiis laudantium suscipit molestias ullam. Laudantium quisquam officiis rerum! Aut adipisci dolorum, voluptates nemo illum, laudantium nobis aliquid facilis eveniet quasi quisquam nostrum. Iure numquam distinctio possimus commodi minus.",
   },
   {
     id: 4,
     icon: IoMdCloudy,
     title: "Cloud Solutions",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tenetur praesentium reiciendis voluptas officia voluptatem, eos quidem eligendi nihil fugiat dolores, dolor ipsum fugit laborum!",
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est dolor officiis laudantium suscipit molestias ullam. Laudantium quisquam officiis rerum! Aut adipisci dolorum, voluptates nemo illum, laudantium nobis aliquid facilis eveniet quasi quisquam nostrum. Iure numquam distinctio possimus commodi minus.",
   },
   {
     id: 5,
     icon: FaBrain,
     title: "AI & Machine Learning",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tenetur praesentium reiciendis voluptas officia voluptatem, eos quidem eligendi nihil fugiat dolores, dolor ipsum fugit laborum!",
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est dolor officiis laudantium suscipit molestias ullam. Laudantium quisquam officiis rerum! Aut adipisci dolorum, voluptates nemo illum, laudantium nobis aliquid facilis eveniet quasi quisquam nostrum. Iure numquam distinctio possimus commodi minus.",
   },
   {
     id: 6,
     icon: MdOutlineSecurity,
     title: "Cybersecurity",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tenetur praesentium reiciendis voluptas officia voluptatem, eos quidem eligendi nihil fugiat dolores, dolor ipsum fugit laborum!",
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est dolor officiis laudantium suscipit molestias ullam. Laudantium quisquam officiis rerum! Aut adipisci dolorum, voluptates nemo illum, laudantium nobis aliquid facilis eveniet quasi quisquam nostrum. Iure numquam distinctio possimus commodi minus.",
   },
 ];
 
 const Services = () => {
   return (
     <div>
+    
       <div
         id="services"
         className="relative overflow-hidden flex flex-col lg:flex-row justify-between min-h-screen bg-gray-800"
@@ -65,7 +66,7 @@ const Services = () => {
           className="hidden md:flex md:items-end mt-6 lg:mt-0 md:w-1/2 lg:w-auto lg:shrink-0 self-end"
         >
           <img
-            className="transition-all duration-300 ease-out hover:drop-shadow-[0_0_25px_rgba(0,60,149,1)] h-64 md:h-80 lg:h-[80vh] lg:max-h-[720px] xl:h-[85vh] w-full md:w-auto object-contain lg:object-cover object-bottom mx-auto"
+            className="transition-all duration-300 ease-out hover:drop-shadow-[0_0_25px_rgba(0,60,149,1)] h-72 md:h-[83vh] lg:h-[91vh] lg:max-h-[780px] xl:h-[96vh] xl:max-h-[870px] w-full md:w-auto object-contain lg:object-cover object-bottom mx-auto"
             src="/ser33.png"
             alt=""
           />
