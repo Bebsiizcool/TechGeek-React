@@ -1,5 +1,9 @@
 # TechGeek 
 
+<p align="center">
+  <img src="./public/heropp.png" alt="TechGeek Hero Section" width="100%">
+</p>
+
 TechGeek is a modern, animated frontend project built with **React, Vite, and Tailwind CSS**. I created this project to practice and strengthen my React and frontend development skills while experimenting with reusable components, animations, responsive UI, and interactive effects.
 
 The current version is **frontend-only**, but this project is being developed with the goal of evolving it into a **full-stack MERN application** as I continue learning backend development.
