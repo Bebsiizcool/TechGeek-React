@@ -54,13 +54,13 @@ export default function Testimonials() {
   return (
     <section id="testimonial" className="relative overflow-hidden py-24 bg-slate-950 h-screen overflow-hidden">
 <ShootingStarsBackground transparent />
-      <div className="text-center mb-14">
+      <div data-aos="fade-up" className="text-center mb-14">
 
         <span className="px-5 py-2 rounded-full bg-black text-white text-sm">
           ⭐ Rated 5/5 by over 1,400 users
         </span>
 
-        <h2 className="text-5xl font-bold mt-8">
+        <h2 className="text-6xl font-bold mt-8">
           What Others Say About Us
         </h2>
 
@@ -71,7 +71,7 @@ export default function Testimonials() {
       </div>
 
       {/* TOP */}
-
+      <div data-aos="fade-up">
       <motion.div
         className="flex gap-6 mb-8 w-max"
         animate={{
@@ -113,7 +113,7 @@ export default function Testimonials() {
           />
         ))}
       </motion.div>
-
+</div>
     </section>
   );
 }

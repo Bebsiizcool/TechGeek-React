@@ -14,8 +14,10 @@ const Services = () => {
       <div id="services" className=" relative overflow-hidden flex justify-between h-screen  bg-gray-800 overflow-hidden">
       
  
-<div className='mt-15'>
-  <img className='h-dvh'src="/ser33.png" alt="" />
+<div data-aos="fade-up" className='mt-15'>
+  <img className='transition-all duration-300 ease-out
+         
+         hover:drop-shadow-[0_0_25px_rgba(0,60,149,1)] h-dvh'src="/ser33.png" alt="" />
 </div>
 
 <div id='left' className='  items-center justify-center flex flex-col w-1/2' >
@@ -24,7 +26,7 @@ const Services = () => {
 <h1 className=' text-6xl font-bold py-10 '>Our Services</h1>
 </div>
 
-<div className='flex flex-wrap gap-6'>
+<div  data-aos="fade-up" className='flex flex-wrap gap-6'>
 
   <div className="bg-gray-300 rounded-4xl w-md h-40 "> 
   <div className='flex items-center p-3'>

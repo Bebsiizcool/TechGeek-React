@@ -27,9 +27,10 @@ const featuresData = [
 const Features = () => {
   return (
     <div>
-      <div id="features" className='min-h-screen bg-gray-800'>
+      <div  id="features" className='min-h-screen bg-gray-800'>
 
-        <div className='flex justify-center text-7xl py-20 font-bold'>
+<div data-aos="fade-up">
+        <div  className='flex justify-center text-7xl py-20 font-bold'>
           <h1>Our Features</h1>
         </div>
 
@@ -54,6 +55,7 @@ const Features = () => {
           ))}
         </div>
 
+      </div>
       </div>
     </div>
   )
